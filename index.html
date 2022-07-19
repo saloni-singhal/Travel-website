@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Agency</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" media="(max-width: 600px)" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <a href="#Home" class="logo"><span>T</span>ravel</a>
+
+            <nav class="navbar nav-media">
+                <a href="#Home">Home</a>
+                <a href="#Destinations">Destinations</a>
+                <a href="#Book">Book</a>
+                <a href="#Services">Services</a>
+                <a href="#Gallery">Gallery</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                <i class="fa-solid fa-user" id="login-btn"></i>
+            </div>
+
+            <form action="" method="" class="search-container">
+                <input type="search" placeholder="search here" id="search">
+                <label for="search" class="fa-solid fa-magnifying-glass"></label>
+            </form>
+
+            <div class="form">
+                <h1>Login</h1>
+                <form action="" method="" class="login-container">
+                <div class="row">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="" placeholder="Name">
+                </div>
+                <div class="row">
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="" placeholder="Password">
+                </div>
+                </form>
+            
+                <form  action="" method="">
+                    <input type="submit" value = "login" class="login" ></input>
+                    <button class="fpassword">Forget Password</button>
+                </form>
+                <div class="new-user"><a href="#new-user" > New User </a></div>
+            </div>
+        </header>
+        
+        <span id="Home"><div class="homeimg">
+            <img src="index-img.jpg" width="100%" height="660">
+            <div class="explore-box">
+                <h1>Find a beatiful place under the Sky</h1>
+                <div class="explore"><a name="#Destinations">Explore More</a></div>
+            </div>
+        </div></span>
+
+        <span id="Destinations"><div class="destination-header">
+            <h2>What's your next destination</h2>
+        </div></span>
+
+        <div class="Destination-grid">
+            <div class="Paris">
+                <img src="Paris.jpg" width="100%" height="60%">
+                <h1>Paris</h1>
+                <p>Begin your journey of paris</p>
+                <div class="Read-button"><a href="Paris.html" target="_blank">Read More</a></div>
+            </div>
+            <div class="London">
+                <img src="London-places/London.jpg" width="100%" height="60%">
+                <h1>London</h1>
+                <p>Begin your journey of London</p>
+                <div class="Read-button"><a href="London.html" target="_blank">Read More</a></div>
+            </div>
+            <div class="Cairo">
+                <img src="Cairo-places/Cairo.jpg" width="100%" height="60%">
+                <h1>Cairo</h1>
+                <p>Begin your journey of Cairo</p>
+                <div class="Read-button"><a href="Cairo.html" target="_blank">Read More</a></div>
+            </div>
+            <div class="Maldives">
+                <img src="Maldives-places/Maldives.jpg" width="100%" height="60%">
+                <h1>Maldives</h1>
+                <p>Begin your journey of Maldives</p>
+                <div class="Read-button"><a href="Maldives.html" target="_blank">Read More</a></div>
+            </div>
+            <div class="Tokyo">
+                <img src="Tokyo-places/Tokyo.webp" width="100%" height="60%">
+                <h1>Tokyo</h1>
+                <p>Begin your journey of Tokyo</p>
+                <div class="Read-button"><a href="Tokyo.html" target="_blank">Read More</a></div>
+            </div>
+            <div class="Zurich">
+                <img src="Zurich-places/Zurich.jpg" width="100%" height="60%">
+                <h1>Zurich</h1>
+                <p>Begin your journey of Zurich</p>
+                <div class="Read-button"><a href="Zurich.html" target="_blank">Read More</a></div>
+            </div>
+        </div>
+
+        <span id="Book"><div class="Book-header">
+            <h2>Time To Book</h2>
+        </div></span>
+
+        <div class="Book-grid">
+            <div class="Book-img">
+                <img src="Book-img.jpg" width="100%" height="100%">
+            </div>
+            <div class="Book-details">
+                <form action="book-form.html" method="post" onSubmit="return validateText()">
+                    <h2>Destination</h2><br>
+                    <input type="text" name="" id="dest">
+                    <h2>Number of members</h2><br>
+                    <input type="number" name="" id="member">
+                    <h2>Arrival</h2><br>
+                    <input type="date" name="" id="arrival">
+                    <h2>Leaving</h2><br>
+                    <input type="date" name="" id="leaving">
+                    <input class="Book-button" type="submit" value="Book Now">
+                </form>
+            </div>
+        </div>
+
+        <span id="Services"><div class="services-header">
+            <h2>Services</h2>
+        </div></span>
+
+        <div class="services-grid"> 
+            <div class="hotel">
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Hotel</h2>
+            </div>
+            <div class="Flight">
+                <i class="fa-solid fa-plane-departure"></i>
+                <h2>Flight</h2>
+            </div>
+            <div class="Food and Drink">
+                <i class="fa-solid fa-utensils"></i>
+                <h2>Food and Drink</h2>
+            </div>
+            <div class="Sport">
+                <i class="fa-solid fa-baseball"></i>
+                <h2>Sport</h2>
+            </div>
+            <div class="Guide">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Guide</h2>
+            </div>
+            <div class="Adventure">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h2>Adventure</h2>
+            </div>
+        </div>
+
+        <span id="Gallery"><div class="services-header">
+            <h2>Gallery</h2>
+        </div></span>
+
+        <div class="gallery-grid">
+            <div class="visit-box">
+                <img src="Gallery/gallery1.jpg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+            <div class="visit-box">
+                <img src="Gallery/gallery2.jpg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+            <div class="visit-box">
+                <img src="Gallery/gallery3.jpg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+            <div class="visit-box">
+                <img src="Gallery/gallery4.jpg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+            <div class="visit-box">
+                <img src="Gallery/gallery5.jpg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+            <div class="visit-box">
+                <img src="Gallery/gallery6.jpeg" width="100%" height="100%">
+                <div class="content">
+                    <p>Places you can't deny to visit</p>
+                    <div class="explore"><a href="#Home">Explore More</a></div>
+                </div>
+            </div>
+        </div>
+
+        <span id="Contact"><div class="services-header">
+            <h2>Contact</h2>
+        </div></span>
+
+        <div class="flex-contact">
+            <div class="form-flex">
+                <form action="" method="" class="flex-form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <div class="phone-grid">
+                        <div id="select-form">
+                            <select>
+                                <option value="91">+91</option>
+                                <option value="1">+1</option>
+                                <option value="44">+44</option>
+                                <option value="64">+64</option>
+                                <option value="975">+975</option>
+                                <option value="33">+33</option>
+                                <option value="81">+81</option>
+                            </select>
+                        </div>
+                        <div class="phone"><input type="tel" placeholder="Phone"></div>
+                    </div>
+                    <textarea cols="30" rows="10" placeholder="Type your comment"></textarea>
+                    <input class="contact-button" type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="img">
+                <img src="contact-img1.webp" width="100%" height="100%">
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="collaborate">
+                    <h1>collaborate</h1>
+                    <p>Let's have fun together</p>
+                </div>
+                <div class="Branch Locations">
+                    <h1>Branch Locations</h1>
+                    <p>India</p>
+                    <p>USA</p>
+                    <p>France</p>
+                    <p>Japan</p>
+                </div>
+                <div class="Contact">
+                    <h1>Contact</h1>
+                    <p>
+                        Feel free to contact us on<br> 
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                Created by <span style="color:brown">Saloni Singhal</span> | copyright 2022 &copy; | All Rights Reserved
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
