@@ -29,12 +29,10 @@ logo_media.addEventListener("click", ()=>{
 })
 
 
-
-
 function validateText(){
     
     if (box.value.length < 3 || box.value.length > 20){
-        alert("Please enter character between 3 and 20");
+        alert("Please enter atleast 3 characters and atmost 20");
         return false;} 
 
     if (box.value.length >= 3 && box.value.length <= 20){
@@ -53,37 +51,4 @@ function validateText(){
         return false;} 
            
 }
-
-
-
-
-
-/** let usernm = document.querySelector("#username");
-let pass = document.querySelector("#password");
-
-if (usernm.value.length < 5 || pass.value.length < 5){
-    alert("Enter atleast 5 characters");
-} */
-/* 
-var special_char = [33, 34, 60, 62, 59, 47, 45];
-    for (var i=0; i < special_char.length(); i++){
-        if (box.value == special_char[i]){
-            alert("Special characters not allowed");
-            return false;}
-        }     
-
-https://www.w3schools.com/charsets/ref_html_ascii.asp   
-
-var noSpecChar = box.value.replace(/[^a-z]/g, '');
-    alert(noSpecChar);
-
-box.value.replace(/[^a-z] /g, '');
-alert(document.write(box.value));  
-
-if (box.value.length >= 3 && box.value.length <= 20){
-        if ((box.value.replace(/[^a-z]/g, '')) = true) {
-            alert("Special characters not allowed");
-            return false;}
-    }
-
-*/    
+   
