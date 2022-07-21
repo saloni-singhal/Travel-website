@@ -37,9 +37,9 @@ function validateText(){
 
     if (box.value.length >= 3 && box.value.length <= 20){
         var a = box.value;
-        var b = box.value.replace(/[^a-z]/g, '');
+        var b = box.value.replace(/[^a-zA-Z]/g, '');
         if (a != b){
-            alert("Special characters not allowed");
+            alert("Special characters and numbers not allowed");
             return false;}}
 
     if (box1.value.length == " " || box1.value.length > 2){
